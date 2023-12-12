@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДирОтдПоРабСКл",
+      "projection": "ДирОтдПоРабСКлL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Расторж договора",
+  "name": "IISKursovaya16РасторжДоговораE",
+  "className": "РасторжДоговораE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya16-расторж-договора",
+      "modelProjection": "РасторжДоговораE"
+    }
+  ]
+}

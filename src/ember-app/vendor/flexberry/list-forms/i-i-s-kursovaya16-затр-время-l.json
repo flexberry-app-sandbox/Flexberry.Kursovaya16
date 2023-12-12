@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya16-затр-время-e",
+  "editForm": "i-i-s-kursovaya16-затр-время-e",
+  "external": false,
+  "caption": "Затр время",
+  "name": "IISKursovaya16ЗатрВремяL",
+  "className": "ЗатрВремяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya16-затр-время",
+      "modelProjection": "ЗатрВремяL"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+﻿{
+  "name": "IISKursovaya16ЗаключДоговора",
+  "modelName": "i-i-s-kursovaya16-заключ-договора",
+  "className": "ЗаключДоговора",
+  "nameSpace": "IIS.Kursovaya16",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "длительность",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "i-i-s-kursovaya16-тип-договора",
+      "flexberryType": "ТипДоговора",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "дирОтдПоРабСКл",
+      "relatedTo": "i-i-s-kursovaya16-дир-отд-по-раб-с-кл",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-kursovaya16-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаключДоговораE",
+      "modelName": "i-i-s-kursovaya16-заключ-договора",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "длительность",
+          "caption": "",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДирОтдПоРабСКл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 7
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "i-i-s-kursovaya16-дир-отд-по-раб-с-кл",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 10
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 11
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-kursovaya16-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаключДоговораL",
+      "modelName": "i-i-s-kursovaya16-заключ-договора",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "длительность",
+          "caption": "",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДирОтдПоРабСКл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 7
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "i-i-s-kursovaya16-дир-отд-по-раб-с-кл",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 10
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 11
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 9,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-kursovaya16-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

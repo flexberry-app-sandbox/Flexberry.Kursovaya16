@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya16-расчет-ост-врем-e",
+  "editForm": "i-i-s-kursovaya16-расчет-ост-врем-e",
+  "external": false,
+  "caption": "Расчет ост врем",
+  "name": "IISKursovaya16РасчетОстВремL",
+  "className": "РасчетОстВремL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya16-расчет-ост-врем",
+      "modelProjection": "РасчетОстВремL"
+    }
+  ]
+}

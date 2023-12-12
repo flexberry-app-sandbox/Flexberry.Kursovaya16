@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Empty",
+      "projection": "ЗатрВремяL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Перечень услуг",
+  "name": "IISKursovaya16ПереченьУслугE",
+  "className": "ПереченьУслугE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya16-перечень-услуг",
+      "modelProjection": "ПереченьУслугE"
+    }
+  ]
+}

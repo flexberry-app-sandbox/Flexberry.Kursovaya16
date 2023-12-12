@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Затр время",
+  "name": "IISKursovaya16ЗатрВремяE",
+  "className": "ЗатрВремяE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya16-затр-время",
+      "modelProjection": "ЗатрВремяE"
+    }
+  ]
+}

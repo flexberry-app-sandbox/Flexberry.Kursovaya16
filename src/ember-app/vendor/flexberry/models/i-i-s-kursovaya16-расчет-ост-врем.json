@@ -1,0 +1,102 @@
+﻿{
+  "name": "IISKursovaya16РасчетОстВрем",
+  "modelName": "i-i-s-kursovaya16-расчет-ост-врем",
+  "className": "РасчетОстВрем",
+  "nameSpace": "IIS.Kursovaya16",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "было",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "доступно",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "использовано",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "оказКонсульт",
+      "relatedTo": "i-i-s-kursovaya16-оказ-консульт",
+      "inverse": "расчетОстВрем"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РасчетОстВремE",
+      "modelName": "i-i-s-kursovaya16-расчет-ост-врем",
+      "attrs": [
+        {
+          "name": "было",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступно",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "использовано",
+          "caption": "",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РасчетОстВремL",
+      "modelName": "i-i-s-kursovaya16-расчет-ост-врем",
+      "attrs": [
+        {
+          "name": "было",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступно",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "использовано",
+          "caption": "",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

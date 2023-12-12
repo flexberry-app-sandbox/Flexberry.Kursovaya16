@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Kursovaya16",
+  "applicationTitle": "Kursovaya16",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya16",
+      "caption": "Kursovaya16",
+      "title": "Kursovaya16",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya16-затр-время-l",
+          "menuName": null,
+          "caption": "Затр время",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-расторж-договора-l",
+          "menuName": null,
+          "caption": "Расторж договора",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-дир-отд-по-раб-с-кл-l",
+          "menuName": null,
+          "caption": "Дир отд по раб с кл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-перечень-услуг-l",
+          "menuName": null,
+          "caption": "Перечень услуг",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-расчет-ост-врем-l",
+          "menuName": null,
+          "caption": "Расчет ост врем",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya16-заключ-договора-l",
+          "menuName": null,
+          "caption": "Заключ договора",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

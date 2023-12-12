@@ -1,0 +1,123 @@
+﻿{
+  "name": "IISKursovaya16ОказКонсульт",
+  "modelName": "i-i-s-kursovaya16-оказ-консульт",
+  "className": "ОказКонсульт",
+  "nameSpace": "IIS.Kursovaya16",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяКонсульт",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "предостУслуга",
+      "type": "i-i-s-kursovaya16-услуга",
+      "flexberryType": "Услуга",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "empty",
+      "relatedTo": "i-i-s-kursovaya16-перечень-услуг",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заключДоговора",
+      "relatedTo": "i-i-s-kursovaya16-заключ-договора",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расчетОстВрем",
+      "relatedTo": "i-i-s-kursovaya16-расчет-ост-врем",
+      "inverse": "оказКонсульт"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОказКонсультE",
+      "modelName": "i-i-s-kursovaya16-оказ-консульт",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "времяКонсульт",
+          "caption": "Время консульт",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "предостУслуга",
+          "caption": "Предост услуга",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаключДоговора",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "заключДоговора",
+          "relatedTo": "i-i-s-kursovaya16-заключ-договора",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
